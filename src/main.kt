@@ -18,6 +18,26 @@ fun main(args: Array<String>) {
     println("O número da conta é ${contaFran.numero}")
     println("O saldo da conta é ${contaFran.saldo}")
 
+    println("Depositando na conta do Márcio")
+    deposita(contaMarcio, 50.0)
+    println(contaMarcio.saldo)
+    println()
+    println("Depositando na conta da Fran")
+    deposita(contaFran, 100.0)
+    println(contaFran.saldo)
+}
+
+fun deposita(conta : Conta, valor : Double){
+    conta.saldo += valor
+}
+
+class Conta {
+    var titular: String = ""
+    var numero = 0
+    var saldo = 0.0
+}
+
+fun testaCopiasEReferencias() {
     val numeroX = 10
     var numeroY = numeroX
     numeroY++
@@ -37,16 +57,9 @@ fun main(args: Array<String>) {
     println(contaJoao)
     println(contaMaria)
 
-
 }
 
-class Conta {
-    var titular : String = ""
-    var numero = 0
-    var saldo = 0.0
-}
-
-fun testaLacos(){
+fun testaLacos() {
     //i in 1..5 = range
     //i in 5..1 = downTo
     //step = de quantos em quantos faz a interação
