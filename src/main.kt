@@ -5,36 +5,36 @@ fun main(args: Array<String>) {
     val contaMarcio = Conta()
     contaMarcio.titular = "Márcio"
     contaMarcio.numero = 1000
-    contaMarcio.setSaldo(500.0)
+    contaMarcio.deposita(500.0)
     println("O titular da conta é ${contaMarcio.titular}")
     println("O número da conta é ${contaMarcio.numero}")
-    println("O saldo da conta é ${contaMarcio.getSaldo()}")
+    println("O saldo da conta é ${contaMarcio.saldo}")
 
     val contaFran = Conta()
     contaFran.titular = "Fran"
     contaFran.numero = 1001
-    contaFran.setSaldo(450.0)
+    contaFran.deposita(450.0)
     println("O titular da conta é ${contaFran.titular}")
     println("O número da conta é ${contaFran.numero}")
-    println("O saldo da conta é ${contaFran.getSaldo()}")
+    println("O saldo da conta é ${contaFran.saldo}")
 
     println("Depositando na conta do Márcio")
     contaMarcio.deposita(50.0)
-    println(contaMarcio.getSaldo())
+    println(contaMarcio.saldo)
     println()
     println("Depositando na conta da Fran")
     contaFran.deposita(100.0)
-    println(contaFran.getSaldo())
+    println(contaFran.saldo)
 
     println("Sacando da conta do Márcio")
     contaMarcio.saca(100.0)
-    println(contaMarcio.getSaldo())
+    println(contaMarcio.saldo)
 
     println()
-    println(contaFran.getSaldo())
+    println(contaFran.saldo)
     println("Sacando da conta da Fran")
     contaFran.saca(120.0)
-    println(contaFran.getSaldo())
+    println(contaFran.saldo)
 
     println("Transferência da conta da Fran para o Márcio")
 
@@ -49,10 +49,15 @@ fun main(args: Array<String>) {
 class Conta {
     var titular: String = ""
     var numero = 0
-    private var saldo = 0.0
+    var saldo = 0.0
+        private set
+
+
 
     fun deposita(valor: Double) {
-        this.saldo += valor
+        if (valor > 0){
+            this.saldo += valor
+        }
     }
 
     fun saca(valor: Double) {
@@ -71,13 +76,16 @@ class Conta {
         return false
     }
 
-    fun getSaldo(): Double{
-        return saldo
-    }
-
-    fun setSaldo(valor : Double){
-        saldo = valor
-    }
+//    fun getSaldo(): Double{
+//        return saldo
+//    }
+//
+//    fun setSaldo(valor : Double){
+//        if (valor > 0){
+//            saldo = valor
+//        }
+//
+//    }
 }
 
 fun testaCopiasEReferencias() {
