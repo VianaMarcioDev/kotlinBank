@@ -17,6 +17,27 @@ fun main(args: Array<String>) {
     println("O titular da conta é ${contaFran.titular}")
     println("O número da conta é ${contaFran.numero}")
     println("O saldo da conta é ${contaFran.saldo}")
+
+    val numeroX = 10
+    var numeroY = numeroX
+    numeroY++
+
+    println("Número X é $numeroX")
+    println("Número Y é $numeroY")
+
+    val contaJoao = Conta()
+    contaJoao.titular = "João"
+    val contaMaria = contaJoao
+    contaMaria.titular = "Maria"
+    contaJoao.titular = "João"
+
+    println("titular da conta joão: ${contaJoao.titular}")
+    println("titular da conta maria: ${contaMaria.titular}")
+
+    println(contaJoao)
+    println(contaMaria)
+
+
 }
 
 class Conta {
