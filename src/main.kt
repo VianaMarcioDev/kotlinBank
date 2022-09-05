@@ -2,17 +2,13 @@ fun main(args: Array<String>) {
     println("Bem-vindo ao KotlinBank")
     println()
 
-    val contaMarcio = Conta()
-    contaMarcio.titular = "Márcio"
-    contaMarcio.numero = 1000
+    val contaMarcio = Conta("Márcio", 1000)
     contaMarcio.deposita(500.0)
     println("O titular da conta é ${contaMarcio.titular}")
     println("O número da conta é ${contaMarcio.numero}")
     println("O saldo da conta é ${contaMarcio.saldo}")
 
-    val contaFran = Conta()
-    contaFran.titular = "Fran"
-    contaFran.numero = 1001
+    val contaFran = Conta("Fran", 1001)
     contaFran.deposita(450.0)
     println("O titular da conta é ${contaFran.titular}")
     println("O número da conta é ${contaFran.numero}")
@@ -46,11 +42,14 @@ fun main(args: Array<String>) {
 }
 
 
-class Conta {
-    var titular: String = ""
-    var numero = 0
+class Conta(var titular: String, var numero: Int) {
     var saldo = 0.0
         private set
+
+//    constructor(titular: String, numero: Int){
+//        this.titular = titular
+//        this.numero = numero
+//    }
 
 
 
@@ -96,9 +95,8 @@ fun testaCopiasEReferencias() {
     println("Número X é $numeroX")
     println("Número Y é $numeroY")
 
-    val contaJoao = Conta()
-    contaJoao.titular = "João"
-    val contaMaria = contaJoao
+    val contaJoao = Conta("João", 1002)
+    val contaMaria = Conta("Maria", 1003)
     contaMaria.titular = "Maria"
     contaJoao.titular = "João"
 
