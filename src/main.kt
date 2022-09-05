@@ -2,6 +2,30 @@ fun main(args: Array<String>) {
     println("Bem-vindo ao KotlinBank")
     println()
 
+    val contaMarcio = Conta()
+    contaMarcio.titular = "Márcio"
+    contaMarcio.numero = 1000
+    contaMarcio.saldo = 200.0
+    println("O titular da conta é ${contaMarcio.titular}")
+    println("O número da conta é ${contaMarcio.numero}")
+    println("O saldo da conta é ${contaMarcio.saldo}")
+
+    val contaFran = Conta()
+    contaFran.titular = "Fran"
+    contaFran.numero = 1001
+    contaFran.saldo = 100.0
+    println("O titular da conta é ${contaFran.titular}")
+    println("O número da conta é ${contaFran.numero}")
+    println("O saldo da conta é ${contaFran.saldo}")
+}
+
+class Conta {
+    var titular : String = ""
+    var numero = 0
+    var saldo = 0.0
+}
+
+fun testaLacos(){
     //i in 1..5 = range
     //i in 5..1 = downTo
     //step = de quantos em quantos faz a interação
@@ -44,8 +68,6 @@ fun main(args: Array<String>) {
         println()
         i++
     }
-
-
 }
 
 fun testaCondicoes(saldo: Double) {
