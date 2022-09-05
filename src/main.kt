@@ -34,7 +34,9 @@ fun main(args: Array<String>) {
 
     println("Transferência da conta da Fran para o Márcio")
 
-    if (contaFran.transfere(70.0, contaMarcio)){
+
+    //labels
+    if (contaFran.transfere(valor = 70.0, destino = contaMarcio)){
         println("Tranferência bem-sucedida")
     }else{
         println("Falha na transferência")
@@ -42,7 +44,7 @@ fun main(args: Array<String>) {
 }
 
 
-class Conta(var titular: String, var numero: Int) {
+class Conta(var titular: String, val numero: Int) {
     var saldo = 0.0
         private set
 
