@@ -1,10 +1,10 @@
 package br.com.marcioviana.kotlinBank.modelo
 
 class ContaCorrente(
-        titular: String,
+        titular: Cliente,
         numero: Int
 ) : Conta(
-        titular = titular,
+        titular =titular,
         numero = numero
 ) {
     override fun saca(valor: Double) {

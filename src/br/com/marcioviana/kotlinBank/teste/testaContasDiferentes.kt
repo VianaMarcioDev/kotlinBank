@@ -1,11 +1,18 @@
 package br.com.marcioviana.kotlinBank.teste
 
+import br.com.marcioviana.kotlinBank.modelo.Cliente
 import br.com.marcioviana.kotlinBank.modelo.ContaCorrente
 import br.com.marcioviana.kotlinBank.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
-    val contaCorrente = ContaCorrente(titular = "Márcio", numero = 1000)
-    val contaPoupanca = ContaPoupanca(titular = "Aldilene", numero = 1001)
+    val contaCorrente = ContaCorrente(
+            titular = Cliente(nome = "Márcio", cpf = "111.111.111-11", senha = 1234),
+            numero = 1000
+    )
+    val contaPoupanca = ContaPoupanca(
+            titular = Cliente(nome = "Aldilene", cpf = "222.222.222-22", senha = 4321),
+            numero = 1001
+    )
 
     contaCorrente.deposita(1000.0)
     println("Saldo conta corrente ${contaCorrente.saldo}")

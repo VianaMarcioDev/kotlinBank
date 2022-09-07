@@ -1,18 +1,23 @@
 package br.com.marcioviana.kotlinBank.teste
 
+import br.com.marcioviana.kotlinBank.modelo.Cliente
 import br.com.marcioviana.kotlinBank.modelo.ContaCorrente
 import br.com.marcioviana.kotlinBank.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
     println()
 
-    val contaMarcio = ContaCorrente("Márcio", 1000)
+    val marcio = Cliente(nome = "Márcio", cpf = "111.111.111-11", senha = 1234)
+
+    val contaMarcio = ContaCorrente(marcio, 1000)
     contaMarcio.deposita(500.0)
     println("O titular da conta é ${contaMarcio.titular}")
     println("O número da conta é ${contaMarcio.numero}")
     println("O saldo da conta é ${contaMarcio.saldo}")
 
-    val contaFran = ContaPoupanca("Fran", 1001)
+    val fran = Cliente(nome = "Fran", cpf = "222.222.222-22", senha = 4321)
+
+    val contaFran = ContaPoupanca(fran, 1001)
     contaFran.deposita(450.0)
     println("O titular da conta é ${contaFran.titular}")
     println("O número da conta é ${contaFran.numero}")

@@ -1,6 +1,9 @@
 package br.com.marcioviana.kotlinBank.modelo
 
-abstract class Conta(var titular: String, val numero: Int) {
+abstract class Conta(
+        var titular: Cliente,
+        val numero: Int
+) {
     var saldo = 0.0
         protected set
 
