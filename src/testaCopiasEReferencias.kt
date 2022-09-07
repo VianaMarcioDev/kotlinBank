@@ -6,8 +6,8 @@ fun testaCopiasEReferencias() {
     println("Número X é $numeroX")
     println("Número Y é $numeroY")
 
-    val contaJoao = Conta("João", 1002)
-    val contaMaria = Conta("Maria", 1003)
+    val contaJoao = ContaPoupanca("João", 1002)
+    val contaMaria = ContaCorrente("Maria", 1003)
     contaMaria.titular = "Maria"
     contaJoao.titular = "João"
 
