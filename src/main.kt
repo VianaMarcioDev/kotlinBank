@@ -33,6 +33,27 @@ fun main(args: Array<String>) {
         println("Erro na autenticação")
     }
 
+    val rui = Diretor(
+            nome = "Rui",
+            cpf = "333.333.333-33",
+            salario = 10000.0,
+            senha = 4321,
+            plr = 5000.0
+    )
+
+    println()
+    println("nome ${rui.nome}")
+    println("cpf ${rui.cpf}")
+    println("salario ${rui.salario}")
+    println("bonificação ${rui.bonificacao()}")
+    println("PLR ${rui.plr}")
+
+    if (rui.autentica(4321)){
+        println("Autenticou com sucesso")
+    }else{
+        println("Erro na autenticação")
+    }
+
 }
 
 
