@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58f49776-78b8-4b19-8538-865fd2a5ec13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CalculadoraBonificacao.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KotlinBank/Diretor.class" afterPath="$PROJECT_DIR$/out/production/KotlinBank/Diretor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KotlinBank/Funcionario.class" afterPath="$PROJECT_DIR$/out/production/KotlinBank/Funcionario.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KotlinBank/Gerente.class" afterPath="$PROJECT_DIR$/out/production/KotlinBank/Gerente.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KotlinBank/MainKt.class" afterPath="$PROJECT_DIR$/out/production/KotlinBank/MainKt.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Analista.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Diretor.kt" afterPath="$PROJECT_DIR$/src/Diretor.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Gerente.kt" afterPath="$PROJECT_DIR$/src/Gerente.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalculadoraBonificacao.kt" afterPath="$PROJECT_DIR$/src/CalculadoraBonificacao.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.kt" afterPath="$PROJECT_DIR$/src/main.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +20,8 @@
       <file leaf-file-name="main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="275">
+              <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -55,8 +50,18 @@
       <file leaf-file-name="CalculadoraBonificacao.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CalculadoraBonificacao.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="15" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Analista.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Analista.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -102,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/Diretor.kt" />
         <option value="$PROJECT_DIR$/src/Gerente.kt" />
         <option value="$PROJECT_DIR$/src/CalculadoraBonificacao.kt" />
+        <option value="$PROJECT_DIR$/src/Analista.kt" />
         <option value="$PROJECT_DIR$/src/main.kt" />
       </list>
     </option>
@@ -439,16 +445,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CalculadoraBonificacao.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analista.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        <state relative-caret-position="275">
+          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
           <folding />
         </state>
       </provider>
