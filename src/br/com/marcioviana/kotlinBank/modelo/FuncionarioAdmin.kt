@@ -1,6 +1,4 @@
-package modelo
-
-import modelo.Funcionario
+package br.com.marcioviana.kotlinBank.modelo
 
 abstract class FuncionarioAdmin(
         nome : String,

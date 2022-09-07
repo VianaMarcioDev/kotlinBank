@@ -1,4 +1,4 @@
-package modelo
+package br.com.marcioviana.kotlinBank.modelo
 
 abstract class Funcionario(
         val nome : String,

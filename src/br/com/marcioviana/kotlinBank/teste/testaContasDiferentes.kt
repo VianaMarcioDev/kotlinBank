@@ -1,7 +1,7 @@
-package teste
+package br.com.marcioviana.kotlinBank.teste
 
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
+import br.com.marcioviana.kotlinBank.modelo.ContaCorrente
+import br.com.marcioviana.kotlinBank.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(titular = "Márcio", numero = 1000)

@@ -1,4 +1,4 @@
-package teste
+package br.com.marcioviana.kotlinBank.teste
 
 fun testaLacos() {
     //i in 1..5 = range
@@ -17,12 +17,12 @@ fun testaLacos() {
 
 
         println("Titular $titular")
-        println("Número da modelo.Conta $numeroConta")
+        println("Número da br.com.marcioviana.kotlinBank.modelo.Conta $numeroConta")
         println("Saldo da conta $saldo")
         println()
 
 // Chamar função que está fora do método main
-//  teste.testaCondicoes(saldo)
+//  br.com.marcioviana.kotlinBank.teste.testaCondicoes(saldo)
 
 
         println(i)
@@ -38,7 +38,7 @@ fun testaLacos() {
 
 
         println("Titular $titular")
-        println("Número da modelo.Conta $numeroConta")
+        println("Número da br.com.marcioviana.kotlinBank.modelo.Conta $numeroConta")
         println("Saldo da conta $saldo")
         println()
         i++

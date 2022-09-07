@@ -1,9 +1,9 @@
-package teste
+package br.com.marcioviana.kotlinBank.teste
 
-import modelo.Cliente
-import modelo.Diretor
-import modelo.Gerente
-import modelo.SistemaInterno
+import br.com.marcioviana.kotlinBank.modelo.Cliente
+import br.com.marcioviana.kotlinBank.modelo.Diretor
+import br.com.marcioviana.kotlinBank.modelo.Gerente
+import br.com.marcioviana.kotlinBank.modelo.SistemaInterno
 
 fun testaAutenticacao() {
     val gerente = Gerente(

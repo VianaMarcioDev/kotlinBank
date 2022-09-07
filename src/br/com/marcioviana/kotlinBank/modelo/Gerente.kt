@@ -1,7 +1,4 @@
-package modelo
-
-import modelo.Autenticavel
-import modelo.FuncionarioAdmin
+package br.com.marcioviana.kotlinBank.modelo
 
 class Gerente(
               nome: String,

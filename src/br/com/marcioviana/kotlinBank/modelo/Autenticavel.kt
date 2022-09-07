@@ -1,4 +1,4 @@
-package modelo
+package br.com.marcioviana.kotlinBank.modelo
 
 interface Autenticavel {
 

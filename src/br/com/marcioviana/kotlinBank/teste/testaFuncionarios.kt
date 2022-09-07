@@ -1,9 +1,9 @@
-package teste
+package br.com.marcioviana.kotlinBank.teste
 
-import modelo.Analista
-import modelo.CalculadoraBonificacao
-import modelo.Diretor
-import modelo.Gerente
+import br.com.marcioviana.kotlinBank.modelo.Analista
+import br.com.marcioviana.kotlinBank.modelo.CalculadoraBonificacao
+import br.com.marcioviana.kotlinBank.modelo.Diretor
+import br.com.marcioviana.kotlinBank.modelo.Gerente
 
 fun testaFuncionarios() {
     val marcio = Analista(

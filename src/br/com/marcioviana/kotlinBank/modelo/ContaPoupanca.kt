@@ -1,6 +1,4 @@
-package modelo
-
-import modelo.Conta
+package br.com.marcioviana.kotlinBank.modelo
 
 class ContaPoupanca(
         titular: String,
