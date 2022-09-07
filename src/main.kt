@@ -54,6 +54,14 @@ fun main(args: Array<String>) {
         println("Erro na autenticação")
     }
 
+    val calculadora = CalculadoraBonificacao()
+    calculadora.registra(marcio)
+    calculadora.registra(aldilene)
+    calculadora.registra(rui)
+
+    println()
+    println("Total de bonificações: ${calculadora.total}")
+
 }
 
 
