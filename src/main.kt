@@ -1,12 +1,9 @@
 import br.com.marcioviana.kotlinBank.modelo.Cliente
+import br.com.marcioviana.kotlinBank.modelo.Conta
 import br.com.marcioviana.kotlinBank.modelo.ContaCorrente
 import br.com.marcioviana.kotlinBank.modelo.ContaPoupanca
-import br.com.marcioviana.kotlinBank.teste.testaAutenticacao
 import br.com.marcioviana.kotlinBank.teste.testaContasDiferentes
 
-
-var totalContas : Int = 0
-    private set
 
 fun main(args: Array<String>) {
 
@@ -42,7 +39,7 @@ fun main(args: Array<String>) {
 
     testaContasDiferentes()
 
-    println(totalContas)
+    println(Conta.Contador.total)
 
 }
 

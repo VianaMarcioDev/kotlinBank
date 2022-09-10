@@ -1,6 +1,6 @@
 package br.com.marcioviana.kotlinBank.modelo
 
-import totalContas
+
 
 abstract class Conta(
         var titular: Cliente,
@@ -15,9 +15,14 @@ abstract class Conta(
 //        this.numero = numero
 //    }
 
-    init{
-        totalContas++
+//object declarations
+//Companion object apenas membros da mesma classe conseguem acessar
+     companion object Contador{
+        var total = 0
+        private set
+
     }
+
 
     fun deposita(valor: Double) {
         if (valor > 0){
