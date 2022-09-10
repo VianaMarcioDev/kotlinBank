@@ -1,5 +1,7 @@
 package br.com.marcioviana.kotlinBank.modelo
 
+import totalContas
+
 abstract class Conta(
         var titular: Cliente,
         val numero: Int
@@ -7,12 +9,15 @@ abstract class Conta(
     var saldo = 0.0
         protected set
 
+    var total : Int = 0
 //    constructor(titular: String, numero: Int){
 //        this.titular = titular
 //        this.numero = numero
 //    }
 
-
+    init{
+        totalContas++
+    }
 
     fun deposita(valor: Double) {
         if (valor > 0){
