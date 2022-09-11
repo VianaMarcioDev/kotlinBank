@@ -6,6 +6,7 @@ class Endereco(
         var bairoo: String = "",
         var cidade: String = "",
         var estado: String = "",
-        var complemento: String =""
+        var complemento: String ="",
+        var cep: String = ""
 ) {
 }
